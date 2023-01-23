@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website For EDC </title>
+    <link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        p body {
+            letter-spacing: 1px;
+            line-height: 4px;
+        }
+
+        p {
+            line-height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first">
+
+        <h1 id="Header"> About Me </h1>
+        <hr>
+        <p id="intro">Hello to all the judges of Entrepreneurship Development Cell . </p>
+        <div class="card">
+
+            <div class="image">
+                <img src="photo.jpg" alt="Rohan">
+            </div>
+            <div class="title">
+                <h2>
+                    About Me</h2>
+            </div>
+            <div class="des">
+                <p class="open">Hello I am Rohan Dutta . <span id="dots"> Click on Read More for More
+                        Info...</span><span id="more">
+                        <br>
+                        Name: Rohan Dutta<br><br>
+
+                        <u>Contact Information:</u><br>
+                        1. Email: rohandutta756@email.com<br>
+                        2. Phone: 9123678526<br>
+                        3. LinkedIn: <a id="web" href="https://www.linkedin.com/in/rohan-dutta-3b1203249/"
+                            target="_blank">My
+                            Account</a> <br>
+                    </span>
+                </p>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+                <script>
+                    function myFunction() {
+                        var dots = document.getElementById("dots");
+                        var moreText = document.getElementById("more");
+                        var btnText = document.getElementById("myBtn");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        </p>
+    </div>
+
+
+    </div id="contain">
+    <img id="back" src="logo.png">
+
+</body>
+
+</html>
